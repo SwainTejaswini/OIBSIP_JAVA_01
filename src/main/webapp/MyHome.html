@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body style="text-align: center;">
+<h1>WELCOME TO ATM INTERFACE</h1>
+<div>
+<a href="Home.html"style="color:salmon;font:bolder;font-size-adjust: 0.75;">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="balance.html"style="color: salmon;font:bolder;font-size-adjust: 0.75;">Balance</a>&nbsp;&nbsp;&nbsp;
+<a href="deposite.html"style="color: salmon;font:bolder;font-size-adjust: 0.75;">Deposit</a>&nbsp;&nbsp;&nbsp;
+<a href="withdraw.html"style="color: salmon;font:bolder;font-size-adjust: 0.75;">Withdraw</a>&nbsp;&nbsp;&nbsp;
+<a href="transfar.html"style="color: salmon;font:bolder;font-size-adjust: 0.75;">Transfer</a>&nbsp;&nbsp;&nbsp;
+<a href="#" onclick="logout()" style="color:salmon;font:bolder;font-size-adjust: 0.75;">Logout</a>
+
+  <script>
+    function logout() {
+      // Clear session or token information
+      sessionStorage.clear(); // Clear session storage
+      
+      // Display a message
+      alert('Logged out');
+      
+      // Redirect to the login page after the message is closed
+      window.location.href = 'Home.html'; // Replace '/login' with the actual URL of your login page
+    }
+  </script>
+</div>
+</body>
+</html>
