@@ -83,7 +83,7 @@ public class Transfar extends HttpServlet {
 			
 			PreparedStatement ps2=con.prepareStatement("update bank set amount=? where account_no=?");
 			ps2.setDouble(1,balance);
-			ps2.setInt(2, targetaccountno);
+			ps2.setInt(2,account_no);
 			
 			ps2.executeUpdate();
 			out.println("<h2>After transfer my account balance: "+balance+"</h2>");
@@ -96,7 +96,7 @@ public class Transfar extends HttpServlet {
 			
 			PreparedStatement ps3=con.prepareStatement("update bank set amount=? where account_no=?");
 			ps3.setDouble(1,balance1);
-			ps3.setInt(2, account_no);
+			ps3.setInt(2,  targetaccountno);
 			
 			ps3.executeUpdate();
 			out.println("<h2>After transfer target account balance: "+balance1+"</h2>");
